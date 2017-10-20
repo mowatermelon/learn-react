@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />    
+    <title>木课网</title>
+    <link rel="stylesheet" href="css/mdui.min.css">    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="mdui-bottom-nav-fixed mdui-theme-primary-red">
+  <div id="app">
+    <div class="mdui-bottom-nav mdui-bottom-nav-scroll-hide mdui-color-red mdui-bottom-nav-text-auto"  mdui-tab>
+      <a href="#home" class="mdui-ripple mdui-ripple-white mdui-bottom-nav-active">
+        <i class="mdui-icon material-icons">inbox</i>
+        <label>首页</label>
+      </a>
+      <a href="#find" class="mdui-ripple mdui-ripple-white">
+        <i class="mdui-icon material-icons">filter_center_focus</i>
+        <label>发现</label>
+      </a>
+      <a href="#down" class="mdui-ripple mdui-ripple-white">
+        <i class="mdui-icon material-icons">archive</i>
+        <label>下载</label>
+      </a>
+      <a href="#my" class="mdui-ripple mdui-ripple-white">
+        <i class="mdui-icon material-icons">account_box</i>
+        <label>我的</label>
+      </a>      
+    </div>
+    <div id="home"></div>
+    <div id="find"></div>
+    <div id="down"></div>
+    <div id="my"></div>
+  </div>
+  
+</body>
+<script src="js/mdui.min.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script src="js/browser.min.js"></script>
+<script type="text/babel">
+var Message = React.createClass({
+  render: function() {
+    return <h1>这里是 {this.props.name}</h1>;
+  }
+});
+// var FindMessage = React.createClass({
+//   render: function() {
+//     return <h1>Hello {this.props.name}</h1>;
+//   }
+// });
+// var DownMessage = React.createClass({
+//   render: function() {
+//     return <h1>Hello {this.props.name}</h1>;
+//   }
+// });
+// var MyMessage = React.createClass({
+//   render: function() {
+//     return <h1>Hello {this.props.name}</h1>;
+//   }
+// });
+ReactDOM.render(
+  <Message name="主页" />,
+  document.getElementById('home')
+);
+ReactDOM.render(
+  <Message name="发现" />,
+  document.getElementById('find')
+);
+ReactDOM.render(
+  <Message name="下载" />,
+  document.getElementById('down')
+);
+ReactDOM.render(
+  <Message name="我的" />,
+  document.getElementById('my')
+);
+
+</script>
+</html>

@@ -1,0 +1,17 @@
+{
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/vue.min.js",
+      "js/vue-router.min.js",
+      "js/mdui.min.js",
+      "js/data.js",
+      "js/app.js",
+      "img/favicon.ico",
+      "css/mdui.css",
+      "css/index.css"
+    ],
+    "refer": [],
+    "priority": 0
+  }
+}
